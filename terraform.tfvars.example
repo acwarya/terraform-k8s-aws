@@ -1,0 +1,22 @@
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Cluster Configuration
+cluster_name = "my-k8s-cluster"
+ssh_key_name = "k8s-cluster-key"
+
+# Network Configuration
+vpc_cidr    = "10.0.0.0/16"
+subnet_cidr = "10.0.1.0/24"
+
+# Instance Configuration
+master_instance_type = "t3.micro"
+worker_instance_type = "t3.micro"
+worker_count         = 2
+
+# IP Configuration
+master_private_ip = "10.0.1.10"
+worker_ip_prefix  = "10.0.1."
