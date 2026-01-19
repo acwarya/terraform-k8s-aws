@@ -1,16 +1,28 @@
-﻿# Terraform files to ignore
+﻿# Terraform
 *.tfstate
 *.tfstate.*
-*.tfvars
-*.pem
+*.tfstate.backup
 .terraform/
 .terraform.lock.hcl
-crash.log
+terraform.tfplan
+tfplan
 
-# OS files
-.DS_Store
-Thumbs.db
+# Sensitive files
+*.pem
+*.key
+*.p12
 
-# IDE files
+# Local terraform variables
+terraform.tfvars
+*.auto.tfvars
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
