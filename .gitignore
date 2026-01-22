@@ -7,6 +7,9 @@
 terraform.tfplan
 tfplan
 
+# Backend configuration (contains personal S3 bucket name)
+backend-config.hcl
+
 # Sensitive files
 *.pem
 *.key
